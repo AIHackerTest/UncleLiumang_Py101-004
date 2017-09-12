@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Know the weather</title>
+</head>
+
+<body>
+  <h1 style="font-style:italic">Know the weather</h1>
+
+<div>
+  <form method="post">
+    <p><input type="text" name="city">
+    <input type="submit" name = "action" value="搜索"></p>
+    <p><input type="submit" name = "action" value="记录">
+    <input type="submit" name = "action" value="帮助"></p>
+
+  </form>
+</div>
+</div>
+<div>
+    <p>
+      {% for item in message %}
+      {{item}}<br>
+      {% endfor %}
+    </p>
+</div>
+</body>
+</html>
